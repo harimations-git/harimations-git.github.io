@@ -30,7 +30,8 @@
 
         <div class="heading">
             <div class="heading_line-1">Hello, I'm<span> Harry</span>.</div>
-            <div class="heading_line-2">I'm a full stack web developer.</div>
+            <div class="heading_line-2">I'm a software engineer.</div>
+
             <a class="heading_link" href="#about">
                 <div class="heading-cta">
                     View my work
@@ -39,6 +40,7 @@
             </a>
         </div>
     </div>
+
     <nav class="myNavbar">
         <ul class="navigation">
             <li class="navigation-links"><a href="#hero">Home</a></li>
@@ -47,10 +49,12 @@
             <li class="navigation-links"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
     <section id="about" class="about">
         <div class="header-container">
             <h2 class="about_heading">About</h2>
         </div>
+
         <div class="about_content">
             <div class="profile_icon">
                 <svg class="profile_svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 36 36" aria-hidden="true">
@@ -61,11 +65,11 @@
                             <stop offset="100%" stop-color="#FF5C7A" />
                         </linearGradient>
                     </defs>
-
                     <path class="profile_path"
                         d="M16 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm0-12c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zM27 32a1 1 0 0 1-1-1v-6.115a6.95 6.95 0 0 0-6.942-6.943h-6.116A6.95 6.95 0 0 0 6 24.885V31a1 1 0 1 1-2 0v-6.115c0-4.93 4.012-8.943 8.942-8.943h6.116c4.93 0 8.942 4.012 8.942 8.943V31a1 1 0 0 1-1 1z" />
                 </svg>
             </div>
+
             <p class="profile_biog">
                 Graduate-level Software Engineer currently completing a conversion MSc in Software Development at
                 Queen’s University Belfast, building on a First-Class degree in Audio Production and a 92% final-year
@@ -78,104 +82,110 @@
             <div class="skills">
                 <div class="skills_row">
                     <div class="skills_item">
-                        <img src="media/HTMLicon.png" alt="Skill image" />
-
+                        <img src="media/HTMLicon.png" alt="HTML logo" />
                         <div class="skills_item_name">HTML</div>
                     </div>
                     <div class="skills_item">
-                        <img src="media/JavaScripticon.png" alt="Skill image" />
+                        <img src="media/JavaScripticon.png" alt="JavaScript logo" />
                         <div class="skills_item_name">JAVASCRIPT</div>
                     </div>
                     <div class="skills_item">
-                        <img src="media/CSSicon.png" alt="Skill image" />
+                        <img src="media/CSSicon.png" alt="CSS logo" />
                         <div class="skills_item_name">CSS</div>
                     </div>
                 </div>
+
                 <div class="skills_row">
                     <div class="skills_item">
-                        <img src="media/Javaicon.png" alt="Skill image" />
+                        <img src="media/Javaicon.png" alt="Java logo" />
                         <div class="skills_item_name">JAVA</div>
                     </div>
                     <div class="skills_item">
-                        <img src="media/Csharpicon.png" alt="Skill image" />
+                        <img src="media/Csharpicon.png" alt="C# logo" />
                         <div class="skills_item_name">C#</div>
                     </div>
                     <div class="skills_item">
-                        <img src="media/Nodeicon.png" alt="Skill image" />
+                        <img src="media/Nodeicon.png" alt="Node.js logo" />
                         <div class="skills_item_name">NODE.JS</div>
                     </div>
                     <div class="skills_item">
-                        <img src="media/MongoDBicon.png" alt="Skill image" />
+                        <img src="media/MongoDBicon.png" alt="MongoDB logo" />
                         <div class="skills_item_name">MONGODB</div>
                     </div>
                 </div>
+
                 <div class="skills_row">
                     <div class="skills_item">
-                        <img src="media/Giticon.png" alt="Skill image" />
+                        <img src="media/Giticon.png" alt="Git logo" />
                         <div class="skills_item_name">GIT</div>
                     </div>
                     <div class="skills_item">
-                        <img src="media/Blendericon.png" alt="Skill image" />
+                        <img src="media/Blendericon.png" alt="Blender logo" />
                         <div class="skills_item_name">BLENDER</div>
                     </div>
                     <div class="skills_item">
-                        <img src="media/ProToolsicon.png" alt="Skill image" />
+                        <img src="media/ProToolsicon.png" alt="Pro Tools logo" />
                         <div class="skills_item_name">PRO TOOLS</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="projects" class="projects">
         <div class="header-container">
             <h2 class="about_heading">Projects</h2>
         </div>
-        <div class="project-section" id="video-track-section">
-            <div class="project-display" id="pink-background">
 
+        <!-- Project 1 -->
+        <article class="project-section">
+            <div class="project-display accent-pink">
                 <div class="video-carousel">
-
-                    <button type="button" class="video-btn-left">‹</button>
+                    <button type="button" class="video-btn-left" aria-label="Previous video">‹</button>
 
                     <div class="video-viewport">
                         <div class="video-track">
                             <figure class="video-slide is-active">
-                                <video src="/media/MushTrailer-1.mp4" alt="Placeholder for video demo" controls playsinline 
-                                    preload="metadata"></video>
+                                <video controls playsinline preload="metadata">
+                                    <source src="/media/MushTrailer-1.mp4" type="video/mp4" />
+                                </video>
                             </figure>
 
                             <figure class="video-slide">
-                                <video src="/media/MushTrailer-2.mp4" alt="Placeholder for video demo" controls playsinline
-                                    disablepictureinpicture preload="metadata"></video>
+                                <video controls playsinline preload="metadata">
+                                    <source src="/media/MushTrailer-2.mp4" type="video/mp4" />
+                                </video>
                             </figure>
 
                             <figure class="video-slide">
-                                <video src="/media/MushTrailer-3.mp4" type="video/mov" alt="Placeholder for video demo"
-                                    controls playsinline preload="metadata"></video>
+                                <video controls playsinline preload="metadata">
+                                    <source src="/media/MushTrailer-3.mp4" type="video/mp4" />
+                                </video>
                             </figure>
                         </div>
                     </div>
 
-                    <button type="button" class="video-btn-right">›</button>
+                    <button type="button" class="video-btn-right" aria-label="Next video">›</button>
                 </div>
+            </div>
 
-                <div class="project-detail-container">
-                    <div class="project-details">
-                        <div class="project-title">
-                            <h3>MUSH | Handcrafted 2D Unity Adventure</h3>
-                        </div>
-                        <div class="project-description" id="video-track-description">
-                            <p>
-                                Developed and designed MUSH, a 2D Unity game, using C# with a structured player
-                                controller, state-based gameplay logic, URP 2D pipeline setup, and Tilemap-driven level
-                                building. Still in development.
-                            </p>
-                        </div>
+            <div class="project-detail-container">
+                <div class="project-details">
+                    <div class="project-title">
+                        <h3>MUSH | Handcrafted 2D Unity Adventure</h3>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Developed and designed MUSH, an in-progress 2D Unity game in C#, combining responsive player
+                            controls, state-based gameplay systems, URP 2D visuals, and handcrafted Tilemap levels.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="project-section">
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-section">
             <div class="project-detail-container project-detail-container-inverse">
                 <div class="project-details-inverse">
                     <div class="project-title-inverse">
@@ -199,49 +209,50 @@
                         <div class="video-track">
                             <figure class="video-slide is-active">
                                 <video controls playsinline preload="metadata">
-                                    <source src="/media/HEdClassDemo.mp4" type="video/mp4">
+                                    <source src="/media/HEdClassDemo.mp4" type="video/mp4" />
                                 </video>
                             </figure>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
 
-        <div class="project-section" id="video-track-section">
-            <div class="project-display" id="pink-background">
+        <!-- Project 3 -->
+        <article class="project-section">
+            <div class="project-display accent-pink">
                 <div class="video-carousel">
                     <div class="video-viewport">
                         <div class="video-track">
                             <figure class="video-slide is-active">
-                                <video src="/media/3D-RenderEngineNew.mp4" alt="Placeholder for video demo" controls playsinline
-                                    preload="metadata"></video>
+                                <video controls playsinline preload="metadata">
+                                    <source src="/media/3D-RenderEngineNew.mp4" type="video/mp4" />
+                                </video>
                             </figure>
-
-
                         </div>
                     </div>
                 </div>
-                <div class="project-detail-container">
-                    <div class="project-details">
-                        <div class="project-title">
-                            <h3>Simple 3D Render Engine | Real-Time Java Graphics Demo</h3>
-                        </div>
-                        <div class="project-description">
-                            <p>
-                                Simple 3D Render Engine is a lightweight 3D graphics project built in pure Java with
-                                Swing, designed to turn mathematical rendering concepts into something visual and
-                                interactive. It uses matrix transformations, 3D projection, Z-buffering, and surface
-                                normal lighting to render real-time 3D objects with live rotation and visual feedback.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
-
+            <div class="project-detail-container">
+                <div class="project-details">
+                    <div class="project-title">
+                        <h3>Simple 3D Render Engine | Real-Time Java Graphics Demo</h3>
+                    </div>
+                    <div class="project-description">
+                        <p>
+                            Simple 3D Render Engine is a lightweight 3D graphics project built in pure Java with Swing,
+                            designed to turn mathematical rendering concepts into something visual and interactive. It
+                            uses
+                            matrix transformations, 3D projection, Z-buffering, and surface normal lighting to render
+                            real-time 3D objects with live rotation and visual feedback.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
     </section>
+
     <section id="contact" class="contact">
         <div class="header-container">
             <h2 class="about_heading">Contact</h2>
@@ -259,6 +270,7 @@
                     <span class="contact_label">GitHub</span>
                     <span class="contact_value">View Repository Profile</span>
                 </a>
+
                 <a class="contact_card" href="mailto:harryhorder@gmail.com">
                     <span class="contact_label">Email</span>
                     <span class="contact_value">harryhorder@gmail.com</span>
@@ -272,8 +284,8 @@
             </div>
         </div>
     </section>
-</body>
 
-<script src="scripts/videoBtn.js"></script>
+    <script src="scripts/videoBtn.js"></script>
+</body>
 
 </html>
