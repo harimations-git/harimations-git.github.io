@@ -58,77 +58,91 @@
 
         <div class="about_content">
             <div class="profile_icon">
-                <svg class="profile_svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 36 36" aria-hidden="true">
-                    <defs>
-                        <linearGradient id="profileGrad" x1="6" y1="2" x2="26" y2="30" gradientUnits="userSpaceOnUse">
-                            <stop offset="0%" stop-color="#6FA0FF" />
-                            <stop offset="55%" stop-color="#B07AD9" />
-                            <stop offset="100%" stop-color="#FF5C7A" />
-                        </linearGradient>
-                    </defs>
-                    <path class="profile_path"
-                        d="M16 14c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7zm0-12c-2.757 0-5 2.243-5 5s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zM27 32a1 1 0 0 1-1-1v-6.115a6.95 6.95 0 0 0-6.942-6.943h-6.116A6.95 6.95 0 0 0 6 24.885V31a1 1 0 1 1-2 0v-6.115c0-4.93 4.012-8.943 8.942-8.943h6.116c4.93 0 8.942 4.012 8.942 8.943V31a1 1 0 0 1-1 1z" />
-                </svg>
+                <div class="profile_frame">
+                    <img class="profile_image" src="/media/profile.jpg" alt="Harry Horder" />
+                </div>
             </div>
 
             <p class="profile_biog">
-                Graduate-level Software Engineer currently completing a conversion MSc in Software Development at
-                Queen’s University Belfast, building on a First-Class degree in Audio Production and a 92% final-year
-                dissertation project. Developed hands-on experience through full-stack, software engineering, database,
-                and game development projects, with a strong focus on system design, maintainable code, and end-to-end
-                problem-solving. Combines technical and creative disciplines to build reliable, user-focused software
-                with strong attention to detail and quality.
+                Software Engineer and MSc Software Development graduate from Queen’s University Belfast,
+                with experience across full-stack development, cloud architecture and game development.
+                My dissertation project, PetPath, involved designing and delivering an end-to-end platform
+                using React Native, React, TypeScript and a serverless AWS backend, covering everything from
+                system architecture and APIs to authentication, testing and deployment. Alongside software
+                engineering, I’m passionate about building personal projects and continually developing new
+                skills, particularly through game development with Godot, Unity and C#. I enjoy projects that
+                combine technical problem-solving with creativity, design and experimentation.
             </p>
 
             <div class="skills">
+
+                <!-- ROW 1 -->
                 <div class="skills_row">
+
                     <div class="skills_item">
-                        <img src="media/HTMLicon.png" alt="HTML logo" />
-                        <div class="skills_item_name">HTML</div>
+                        <img src="media/TypeScripticon.png" alt="TypeScript logo" />
+                        <div class="skills_item_name">TYPESCRIPT</div>
                     </div>
+
                     <div class="skills_item">
-                        <img src="media/JavaScripticon.png" alt="JavaScript logo" />
-                        <div class="skills_item_name">JAVASCRIPT</div>
+                        <img src="media/Reacticon.png" alt="React logo" />
+                        <div class="skills_item_name">REACT & REACT NATIVE</div>
                     </div>
+
                     <div class="skills_item">
-                        <img src="media/CSSicon.png" alt="CSS logo" />
-                        <div class="skills_item_name">CSS</div>
+                        <img src="media/AWSicon.png" alt="AWS logo" />
+                        <div class="skills_item_name">AWS</div>
                     </div>
+
                 </div>
 
+
+                <!-- ROW 2 -->
                 <div class="skills_row">
+
                     <div class="skills_item">
                         <img src="media/Javaicon.png" alt="Java logo" />
                         <div class="skills_item_name">JAVA</div>
                     </div>
+
                     <div class="skills_item">
-                        <img src="media/Csharpicon.png" alt="C# logo" />
+                        <img src="media/Csharpicon.png" alt="C Sharp logo" />
                         <div class="skills_item_name">C#</div>
                     </div>
+
                     <div class="skills_item">
                         <img src="media/Nodeicon.png" alt="Node.js logo" />
                         <div class="skills_item_name">NODE.JS</div>
                     </div>
+
                     <div class="skills_item">
-                        <img src="media/MongoDBicon.png" alt="MongoDB logo" />
-                        <div class="skills_item_name">MONGODB</div>
+                        <img src="media/MySqlicon.png" alt="My SQL logo" />
+                        <div class="skills_item_name">MYSQL</div>
                     </div>
+
                 </div>
 
+
+                <!-- ROW 3 -->
                 <div class="skills_row">
+
+                    <div class="skills_item">
+                        <img src="media/Godoticon.png" alt="Godot logo" />
+                        <div class="skills_item_name">GODOT</div>
+                    </div>
+
+                    <div class="skills_item">
+                        <img src="media/Unityicon.png" alt="Unity logo" />
+                        <div class="skills_item_name">UNITY</div>
+                    </div>
+
                     <div class="skills_item">
                         <img src="media/Giticon.png" alt="Git logo" />
                         <div class="skills_item_name">GIT</div>
                     </div>
-                    <div class="skills_item">
-                        <img src="media/Blendericon.png" alt="Blender logo" />
-                        <div class="skills_item_name">BLENDER</div>
-                    </div>
-                    <div class="skills_item">
-                        <img src="media/ProToolsicon.png" alt="Pro Tools logo" />
-                        <div class="skills_item_name">PRO TOOLS</div>
-                    </div>
+
                 </div>
+
             </div>
         </div>
     </section>
@@ -138,7 +152,109 @@
             <h2 class="about_heading">Projects</h2>
         </div>
 
-        <!-- Project 1 -->
+        <article class="project-section">
+
+            <!-- Project 1 -->
+            <div class="project-detail-container project-detail-container-inverse">
+                <div class="project-details-inverse">
+
+                    <div class="project-title-inverse">
+                        <h3>PetPath | Full-Stack Cloud Adoption Platform</h3>
+                    </div>
+
+                    <div class="project-description-inverse">
+                        <p>
+                            Designed and delivered PetPath, an end-to-end pet adoption platform
+                            consisting of a React Native mobile application, React and TypeScript
+                            management portal, and serverless AWS backend. Built cloud services
+                            using API Gateway, Lambda, DynamoDB, Cognito, S3 and SES to support
+                            authentication, pet matching, data persistence, media storage,
+                            moderation and notifications.
+                            <br><br>
+                            Managed the project through Jira using a Scrumban workflow, translating
+                            requirements into user stories, acceptance criteria, epics and focused
+                            development sprints. Features were delivered iteratively and validated
+                            through automated, API, integration, security, performance and user
+                            acceptance testing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-display project-display-inverse">
+
+                <div class="video-carousel petpath-carousel">
+
+                    <button type="button" class="video-btn-left" aria-label="Previous PetPath image">
+                        ‹
+                    </button>
+
+                    <div class="video-viewport">
+                        <div class="video-track">
+
+                            <figure class="video-slide is-active">
+                                <img src="/media/petpath/PetPath-1.png" alt="PetPath application screen" />
+                            </figure>
+
+                            <figure class="video-slide">
+                                <img src="/media/petpath/PetPath-2.png" alt="PetPath application screen" />
+                            </figure>
+
+                            <figure class="video-slide">
+                                <img src="/media/petpath/PetPath-3.png" alt="PetPath application screen" />
+                            </figure>
+
+                            <figure class="video-slide">
+                                <img src="/media/petpath/PetPath-4.png" alt="PetPath application screen" />
+                            </figure>
+
+                            <figure class="video-slide">
+                                <img src="/media/petpath/PetPath-5.png" alt="PetPath application screen" />
+                            </figure>
+
+                            <figure class="video-slide">
+                                <img src="/media/petpath/PetPath-6.png" alt="PetPath application screen" />
+                            </figure>
+
+                            <figure class="video-slide">
+                                <img src="/media/petpath/PetPath-7.png" alt="PetPath application screen" />
+                            </figure>
+
+                            <figure class="video-slide">
+                                <img src="/media/petpath/PetPath-8.png" alt="PetPath application screen" />
+                            </figure>
+
+                            <figure class="video-slide">
+                                <img src="/media/petpath/PetPath-9.png" alt="PetPath application screen" />
+                            </figure>
+
+                            <figure class="video-slide">
+                                <img src="/media/petpath/PetPath-10.png" alt="PetPath application screen" />
+                            </figure>
+
+                            <figure class="video-slide">
+                                <img src="/media/petpath/PetPath-11.png" alt="PetPath application screen" />
+                            </figure>
+
+                            <figure class="video-slide">
+                                <img src="/media/petpath/PetPath-12.png" alt="PetPath application screen" />
+                            </figure>
+
+                        </div>
+                    </div>
+
+                    <button type="button" class="video-btn-right" aria-label="Next PetPath image">
+                        ›
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- Project 2 -->
         <article class="project-section">
             <div class="project-display accent-pink">
                 <div class="video-carousel">
@@ -185,41 +301,197 @@
             </div>
         </article>
 
-        <!-- Project 2 -->
+        <!-- Project 3 -->
         <article class="project-section">
+
             <div class="project-detail-container project-detail-container-inverse">
                 <div class="project-details-inverse">
+
                     <div class="project-title-inverse">
-                        <h3>HEdClass | Educational Management System</h3>
+                        <h3>3D Action Game Prototype | Godot & Blender</h3>
                     </div>
+
                     <div class="project-description-inverse">
                         <p>
-                            HEdClass is a full-stack educational management system built to make complex university
-                            workflows feel more streamlined and intuitive. Using JavaScript, Node.js, Express, MySQL,
-                            and EJS, it manages academic structures, user roles, and student classifications through
-                            secure backend logic, relational database design, role-based access control, and dynamic
-                            SQL-driven reporting.
+                            I’m building this as a long-term passion project using an open-source
+                            workflow centred around Godot and Blender. Development is starting with the
+                            player first, creating the movement, interaction and animation systems that
+                            will form the foundation of the wider game.
+                            <br><br>
+                            Godot is being used for the gameplay side, including momentum-based
+                            movement, grappling, ledge interactions, wall movement, projectiles,
+                            animation blending and custom visual effects. Blender is used alongside it
+                            for modelling, rigging and character animation, with assets and animations
+                            exported into Godot and refined in-engine so movement, physics and animation
+                            work together as one system.
+                            <br><br>
+                            The project is planned to grow from this player-focused prototype into a
+                            fully fledged 3D game, with the environments, mechanics and broader game
+                            design being built around these core systems.
                         </p>
                     </div>
+
                 </div>
             </div>
 
+
             <div class="project-display project-display-inverse">
-                <div class="video-carousel hedclass-video">
+
+                <div class="video-carousel project-video-contain">
+
                     <div class="video-viewport">
                         <div class="video-track">
+
+                            <figure class="video-slide is-active">
+                                <video controls playsinline preload="metadata">
+                                    <source src="/media/GodotTechDemo.mp4" type="video/mp4" />
+                                </video>
+                            </figure>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- Project 4 - HEdClass -->
+        <article class="project-section">
+
+            <div class="project-display accent-pink">
+
+                <div class="video-carousel project-video-contain">
+
+                    <div class="video-viewport">
+                        <div class="video-track">
+
                             <figure class="video-slide is-active">
                                 <video controls playsinline preload="metadata">
                                     <source src="/media/HEdClassDemo.mp4" type="video/mp4" />
                                 </video>
                             </figure>
+
                         </div>
                     </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="project-detail-container">
+                <div class="project-details">
+
+                    <div class="project-title">
+                        <h3>HEdClass | Educational Management System</h3>
+                    </div>
+
+                    <div class="project-description">
+                        <p>
+                            HEdClass is a full-stack educational management system
+                            designed to streamline complex university workflows.
+                            Built with JavaScript, Node.js, Express, MySQL and EJS,
+                            the system manages academic structures, user roles and
+                            student classifications through secure backend logic,
+                            relational database design and role-based access control.
+                            <br><br>
+                            The project strengthened my experience in full-stack
+                            development, REST-style server architecture, relational
+                            database design, authentication and dynamic SQL-driven
+                            reporting.
+                        </p>
+                    </div>
+
                 </div>
             </div>
+
         </article>
 
         <!-- Project 3 -->
+        <article class="project-section">
+
+            <div class="project-detail-container project-detail-container-inverse">
+                <div class="project-details-inverse">
+
+                    <div class="project-title-inverse">
+                        <h3>WHITE SPACE | Solo Animated Short Film</h3>
+                    </div>
+
+                    <div class="project-description-inverse">
+                        <p>
+                            Conceived and produced WHITE SPACE independently as my final
+                            undergraduate project: an 18-minute hand-drawn psychological
+                            animated film inspired by OMORI. I handled the animation, editing,
+                            sound design and post-production, creating more than 30,000
+                            hand-drawn frames throughout development.
+                            The project received <strong>92%</strong> and has since reached
+                            more than <strong>36,000 views on YouTube</strong>. The project remains
+                            one of the strongest examples of my ability to take a large,
+                            ambitious idea from concept to a finished piece through
+                            self-directed development, iteration and attention to detail.
+                        </p>
+                    </div>
+
+
+                    <div class="project-feedback">
+                        <div class="project-feedback-label">
+                            Lecturer Feedback
+                        </div>
+
+                        <blockquote>
+                            “This is an incredibly strong piece of work. Of real
+                            professional quality.”
+                        </blockquote>
+
+                        <blockquote>
+                            “The sound is remarkable in adding meaning to the visuals.”
+                        </blockquote>
+
+                        <blockquote>
+                            “The work has a really unique character... the outcome is
+                            incredibly cohesive.”
+                        </blockquote>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="project-display project-display-inverse">
+
+                <div class="video-carousel project-video-contain">
+
+                    <div class="video-viewport">
+                        <div class="video-track">
+
+                            <figure class="video-slide is-active white-space-video">
+
+                                <video controls playsinline preload="metadata" poster="/media/WhiteSpaceThumbnail.jpg">
+                                    <source src="/media/WhiteSpace.mp4" type="video/mp4" />
+
+                                    Your browser does not support HTML video.
+                                </video>
+
+                                <a class="video-external-link" href="https://www.youtube.com/watch?v=RNd9JeSkiEM"
+                                    target="_blank" rel="noopener noreferrer">
+                                    Watch on YouTube ↗
+                                </a>
+
+                            </figure>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- Project 5 -->
         <article class="project-section">
             <div class="project-display accent-pink">
                 <div class="video-carousel">
@@ -242,10 +514,13 @@
                     </div>
                     <div class="project-description">
                         <p>
-                            Simple 3D Render Engine is a lightweight 3D graphics project built in pure Java with Swing,
-                            designed to turn mathematical rendering concepts into something visual and interactive. It
+                            Simple 3D Render Engine is a lightweight 3D graphics project built in pure Java with
+                            Swing,
+                            designed to turn mathematical rendering concepts into something visual and interactive.
+                            It
                             uses
-                            matrix transformations, 3D projection, Z-buffering, and surface normal lighting to render
+                            matrix transformations, 3D projection, Z-buffering, and surface normal lighting to
+                            render
                             real-time 3D objects with live rotation and visual feedback.
                         </p>
                     </div>
@@ -285,6 +560,14 @@
             </div>
         </div>
     </section>
+
+    <div class="image-lightbox" id="imageLightbox" aria-hidden="true">
+        <button class="image-lightbox-close" type="button" aria-label="Close fullscreen image">
+            ×
+        </button>
+
+        <img class="image-lightbox-image" src="" alt="" />
+    </div>
 
     <script src="scripts/videoBtn.js"></script>
 </body>

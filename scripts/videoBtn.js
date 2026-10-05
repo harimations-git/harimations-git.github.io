@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btnLeft.addEventListener("click", () => show(index - 1));
         btnRight.addEventListener("click", () => show(index + 1));
 
-        carousel.tabIndex = 0; 
+        carousel.tabIndex = 0;
         carousel.addEventListener("keydown", (e) => {
             if (e.key === "ArrowLeft") show(index - 1);
             if (e.key === "ArrowRight") show(index + 1);
@@ -56,9 +56,65 @@ document.addEventListener("DOMContentLoaded", () => {
             const dx = endX - startX;
             startX = null;
 
-            const threshold = 35; 
-            if (dx > threshold) show(index - 1);     
+            const threshold = 35;
+            if (dx > threshold) show(index - 1);
             else if (dx < -threshold) show(index + 1);
         });
+    });
+
+
+    const lightbox = document.querySelector("#imageLightbox");
+    const lightboxImage = lightbox.querySelector(".image-lightbox-image");
+    const lightboxClose = lightbox.querySelector(".image-lightbox-close");
+
+    const openLightbox = (image) => {
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+
+        document.body.style.overflow = "hidden";
+    };
+
+    const closeLightbox = () => {
+        lightbox.classList.remove("is-open");
+        lightbox.setAttribute("aria-hidden", "true");
+
+        lightboxImage.src = "";
+
+        document.body.style.overflow = "";
+    };
+
+
+    // Make every project carousel image clickable
+    document.querySelectorAll(".video-slide img").forEach((image) => {
+        image.addEventListener("click", () => {
+            openLightbox(image);
+        });
+    });
+
+
+    // Close button
+    lightboxClose.addEventListener("click", closeLightbox);
+
+
+    // Clicking the dark background closes it
+    lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+
+    // Clicking the large image closes it too
+    lightboxImage.addEventListener("click", closeLightbox);
+
+
+    // Escape key closes it
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && lightbox.classList.contains("is-open")) {
+            closeLightbox();
+        }
     });
 });
