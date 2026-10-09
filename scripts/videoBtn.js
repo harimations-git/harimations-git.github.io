@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const btnRight = carousel.querySelector(".video-btn-right");
 
 
-        if (!slides.length || !btnLeft || !btnRight) return;
+        if (!slides.length) return;
 
         let index = slides.findIndex((s) => s.classList.contains("is-active"));
         if (index === -1) index = 0;
@@ -35,8 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
             index = newIndex;
         };
 
-        btnLeft.addEventListener("click", () => show(index - 1));
-        btnRight.addEventListener("click", () => show(index + 1));
+        if (btnLeft) {
+            btnLeft.addEventListener("click", () => show(index - 1));
+        }
+
+        if (btnRight) {
+            btnRight.addEventListener("click", () => show(index + 1));
+        }
 
         carousel.tabIndex = 0;
         carousel.addEventListener("keydown", (e) => {
